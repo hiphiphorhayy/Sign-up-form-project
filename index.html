@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-background-image">
+
+
+        <div class="left-container">
+            <div class="logo">
+                <img class="logo-image" src="./images/IMG_1586.JPG" alt="Logo">
+                <div class="logo-text">
+                    Logo
+                </div>
+            </div>
+
+            <div class="credits">
+                Photo by <a href="https://www.instagram.com/ph0t0gdump/">Horhay</a>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="right-container-message">
+                <p>This is a demo <br> <strong><em>PLEASE</em></strong>
+                don't put any sensitive info on this form.</p>
+                <br>
+                <p>I <em>honestly</em> don't know what could happen to your data.</p>
+            </div>
+            <form action="./login.html" class="right-container-form">
+                <section class="form-main">
+                    <h1 class="form-main-title">Check this out!</h1>
+                    <br>
+                    <div class="form-inputs">
+                        <div class="form-row">
+                            <div>
+                                <label for="first-name" style="display: block;"><span style="color:darkred;">*</span>First Name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required minlength="2" maxlength="26">
+                            </div>
+                            <div>
+                                <label for="last-name" style="display: block;">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" minlength="2" maxlength="26">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div>
+                                <label for="email" style="display: block;"><span style="color: darkred;">*</span>Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email"required>
+                            </div>
+                            <div>
+                                <label for="phone" style="display: block;">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number" minlength="10" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div>
+                                <label for="password" style="display: block;"><span style="color: darkred;">*</span>Password</label>
+                                <input type="password" name="password" id="password" required minlength="4" maxlength="20" pattern="(?=.*[a-zA-Z])(?=.*\d).*">
+                                <div class="error-message">
+                                    *Password must be <br>
+                                    between 4 and 20 characters long <br>
+                                    and contain atleast 1 number.
+                                </div>
+                            </div>
+                            <div>
+                                <label for="confirm-password" style="display: block;"><span style="color: darkred;">*</span>Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" required minlength="4" maxlength="20" pattern="(?=.*[a-zA-Z])(?=.*\d).*">
+                                <div class="error-message">
+                                    *Password must be <br>
+                                    between 4 and 20 characters long <br>
+                                    and contain atleast 1 number.
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="form-row-buttons">
+                            <legend>Are you atleast 18 years old?</legend>
+
+                            <input type="radio" name="age" id="over18" value="yes" required>
+                            <label for="over18">Yes, I'm atleast 18 years old.</label>
+
+                            <br><br>
+
+                            <input type="radio" name="age" id="under18" value="no" checked>
+                            <label for="under18">No, I'm not atleast 18 years old.</label>
+                        </fieldset>
+                    </div>
+                </section>
+                <br>
+                <section class="form-buttons">
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <br><br>
+                    <div>
+                        Already have an account? <a href="./login.html" id="login">Log in</a>
+                    </div>
+                </section>
+            </form>
+            <div class="right-container-link">
+                <a href="https://github.com/hiphiphorhayy" target="_blank" rel="noreferrer noopener">
+                    <img src="./images/github_logo.png" alt="Github Link" style="width: 42px; height: 42px;">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
